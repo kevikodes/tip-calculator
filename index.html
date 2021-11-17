@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__left">
+        <div class="left__innerContainer">
+          <div class="left__bill">
+            <p>Bill</p>
+            <div class="left__topInput">
+              <img src="./images/icon-dollar.svg" alt="$" />
+              <input type="number" placeholder="0" />
+            </div>
+          </div>
+          <div class="left__middle">
+            <p>Select Tip %</p>
+            <div class="buttons">
+              <button>5%</button>
+              <button>10%</button>
+              <button>15%</button>
+              <button>25%</button>
+              <button>50%</button>
+              <input
+                type="number"
+                placeholder="Custom"
+                class="left__customInput"
+              />
+            </div>
+          </div>
+          <div class="left__bottom">
+            <p>Number of people</p>
+            <div class="left__bottomInput">
+              <img src="./images/icon-person.svg" alt="person" />
+              <input type="number" placeholder="0" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container__right">
+        <div class="right__innerContainer">
+          <div class="right__top">
+            <div class="right__tipAmount">
+              <p class="heading">
+                Tip Amount <br />
+                <span> /person</span>
+              </p>
+              <h1>$0.00</h1>
+            </div>
+            <div class="right__total">
+              <p>
+                Total <br />
+                <span> /person</span>
+              </p>
+              <h1>$0.00</h1>
+            </div>
+          </div>
+          <div class="right__bottom">
+            <button class="right__resetBtn">RESET</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

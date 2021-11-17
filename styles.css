@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: hsl(185, 41%, 84%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: hsl(0, 0%, 100%);
+  width: 800px;
+  min-height: 400px;
+  display: flex;
+  border-radius: 30px;
+}
+
+.container__left {
+  flex: 0.5;
+  padding: 20px;
+}
+
+.container__right {
+  flex: 0.5;
+  padding: 20px;
+}
+
+.left__innerContainer {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+}
+
+.left__bill {
+  margin-bottom: 20px;
+}
+
+.left__bill p {
+  color: hsl(183, 100%, 15%);
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.left__topInput {
+  background-color: hsl(189, 41%, 97%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.left__bill input {
+  text-align: end;
+  border: none;
+  outline: none;
+  width: 100%;
+  background-color: transparent;
+  padding: 10px;
+  color: hsl(183, 100%, 15%);
+  font-size: 20px;
+}
+
+.left__bill input:focus {
+  outline: none;
+  border: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.left__middle {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 33% 33% 30%;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.buttons button {
+  padding: 10px 8px;
+  cursor: pointer;
+  flex-wrap: wrap;
+  overflow-x: none;
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+
+.buttons input {
+  display: flex;
+  align-items: center;
+  padding: 10px 8px;
+  cursor: pointer;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: hsl(189, 41%, 97%);
+  border-radius: 10px;
+}
+
+.buttons input:focus {
+  border: none;
+  outline: none;
+}
+
+.buttons input::placeholder {
+  text-align: center;
+}
+
+.left__middle p {
+  margin-bottom: 10px;
+  color: hsl(183, 100%, 15%);
+  font-size: 20px;
+}
+
+.left__bottom {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.left__bottom p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.left__bottomInput {
+  background-color: hsl(189, 41%, 97%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+}
+
+.left__bottomInput input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 10px;
+  width: 100%;
+  text-align: end;
+  font-size: 20px;
+  color: hsl(183, 100%, 15%);
+}
+
+.right__innerContainer {
+  background-color: hsl(183, 100%, 15%);
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.right__topContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.right__tipAmount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.right__tipAmount p {
+  color: white;
+  font-size: 18px;
+}
+
+.right__tipAmount span {
+  color: hsl(184, 14%, 56%);
+  font-size: 18px;
+}
+
+.right__tipAmount h1 {
+  color: hsl(172, 67%, 45%);
+}
+
+.right__total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right__total p {
+  color: white;
+  font-size: 18px;
+}
+
+.right__total span {
+  color: hsl(184, 14%, 56%);
+  font-size: 18px;
+}
+
+.right__total h1 {
+  color: hsl(172, 67%, 45%);
+}
+
+.right__tipAmount .right__total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right__bottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right__bottom button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: hsl(172, 67%, 45%);
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+}
